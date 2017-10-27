@@ -1,0 +1,185 @@
+/* FONT FACES */
+
+@font-face{
+    font-family: 'Big John';
+    src: url('./fonts/BIG JOHN.otf');
+}
+
+@font-face{
+    font-family: 'Slim Joe';
+    src: url('./fonts/Slim Joe.otf');
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('./fonts/Champagne & Limousines.ttf');
+}
+
+
+/* HIDE */
+
+
+/* GLOBAL */
+
+.highlight{
+    color: #0BB900;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#menu_hider{
+    display: none;
+}
+/* HEADER & STUFF */
+
+
+header ul{
+    list-style-type: none;
+    float: right;
+}
+
+article{
+    height: 100px;
+}
+
+header li{
+    color: white;
+    padding: 5px;
+    font-family: "Slim Joe", sans-serif;
+    font-size: large;
+    display: inline;
+}
+
+
+header{
+    opacity: 0.7;
+    position: fixed;
+    width: 100%;
+    background-color: #222222;
+}
+
+#display{
+    font-family: "Big John", 'Arial', 'sans-serif';
+    background-image: url("https://imgur.com/cFNGnQU.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position-y: -475px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#display h1{
+    color: white;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+header h1{
+    float: left;
+    font-family: "Champagne & Limousines", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#display h3{
+    font-family: "Slim Joe", 'Arial', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#display h2{
+    font-weight: lighter;
+    font-family: "Century Gothic", 'Arial', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+/* HIDE
+
+div{
+    display: none;
+}
+
+ MEDIA */
+@media screen and (max-width: 600px){
+    header h1{
+        float: none;
+        text-align: center;
+    }
+    header ul{
+        float: none;
+    }
+    header li{
+        text-align: center;
+        display: list-item;
+    }
+
+    #menu{
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: height 1s;
+    }
+
+    #menu_hider_div{
+        margin-bottom: -15px;
+        text-align: center;
+        display: block;
+    }
+
+    #menu_hider{
+        display: inline-block;
+        cursor: pointer;
+        margin: auto;
+        color: white;
+        font-family: "Century Gothic",sans-serif;
+        text-align: center;
+    }
+
+    #menu_hider img{
+        transition: all 1s;
+        width: 10px;
+        height: 10px;
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+    #display {
+        /* Screen is too big for the small image, link them to the large version*/
+        background-size: 350vh;
+        background-image: url("https://i.pinimg.com/originals/ec/89/55/ec89558726c88127a83db62d07e65b49.jpg");
+    }
+}
+
+
+@media screen and (min-height: 850px) {
+    #display {
+        /* Screen is too big for the small image, link them to the large version*/
+        background-size: 350vh;
+        background-image: url("https://i.pinimg.com/originals/ec/89/55/ec89558726c88127a83db62d07e65b49.jpg");
+    }
+}
