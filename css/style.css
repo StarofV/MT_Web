@@ -16,8 +16,37 @@
 }
 
 
-/* HIDE */
-
+/* FORUM */
+.forum_topics_feed {
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+    float: right;
+    border-radius: 20px 5px 5px 5px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1e8620;
+    padding: 5px;
+}
+.forum_topics_feed ul {
+    font-size: 13px;
+}
+.forum_topics_feed li {
+    padding: 7px 0;
+}
+.forum_topics_feed .forum_topic_title {
+    font-size: 14px;
+    color: #232323;
+    text-decoration: none;
+    line-height: 140%;
+}
+.forum_topics_feed .forum_topic_desc {
+    color: #999;
+    font-size: 12px;
+    line-height: 140%;
+}
+.forum_topics_feed .feed_heading {
+    font-weight: bold;
+}
 
 /* GLOBAL */
 
@@ -27,6 +56,7 @@
 
 
 body{
+    background-color: #e1ddd8;
     padding: 0;
     margin: 0;
 }
@@ -64,10 +94,11 @@ header{
 
 #display{
     font-family: "Big John", 'Arial', 'sans-serif';
-    background-image: url("https://imgur.com/cFNGnQU.jpg");
+ /*   background-image: url("https://imgur.com/cFNGnQU.jpg");
     background-repeat: no-repeat;
     background-size: 2000px;
-    background-position-y: -475px;
+    background-attachment: fixed;
+    background-position-y: -475px;*/
     text-align: center;
     display: flex;
     justify-content: center;
@@ -124,6 +155,12 @@ div{
 
  MEDIA */
 @media screen and (max-width: 600px){
+
+    .forum_topics_feed{
+        float: none;
+        margin: auto;
+        border: 0;
+    }
     header h1{
         float: none;
         text-align: center;
@@ -138,6 +175,7 @@ div{
 
     #menu{
         height: 0;
+        margin-bottom: 0;
         overflow: hidden;
         padding: 0;
         transition: height 1s;
@@ -171,7 +209,7 @@ div{
     #display {
         /* Screen is too big for the small image, link them to the large version*/
         background-size: 350vh;
-        background-image: url("https://i.pinimg.com/originals/ec/89/55/ec89558726c88127a83db62d07e65b49.jpg");
+      /*  background-image: url("https://i.pinimg.com/originals/ec/89/55/ec89558726c88127a83db62d07e65b49.jpg");*/
     }
 }
 
@@ -180,6 +218,6 @@ div{
     #display {
         /* Screen is too big for the small image, link them to the large version*/
         background-size: 350vh;
-        background-image: url("https://i.pinimg.com/originals/ec/89/55/ec89558726c88127a83db62d07e65b49.jpg");
+        /*background-image: url("https://i.pinimg.com/originals/ec/89/55/ec89558726c88127a83db62d07e65b49.jpg");*/
     }
 }
