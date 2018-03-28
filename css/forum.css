@@ -1,0 +1,19 @@
+
+/* Forum CSS. Yes, it's small. */
+header{
+    position: static;
+    background-image: url('https://imgur.com/cFNGnQU.jpg');
+    background-position-y: -300px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 58px;
+    !important;
+}
+
+ /*MEDIA */
+@media screen and (max-width: 600px){
+    header{
+        background-position-y: 0;
+    }
+}

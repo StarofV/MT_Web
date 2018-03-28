@@ -1,3 +1,16 @@
+$(document).ready(function () {
+    $.post("./server-check.php", function (data) {
+        var div = $("#server_status");
+        if (data == 1){
+            div.css('color', 'green');
+            div.html('Server is online!');
+        }else{
+            div.css('color', 'red');
+            div.html('Server is offline')
+        }
+    });
+});
+
 function toggleMenu(){
     var menu= $('#menu');
     var img = $('#menu_hider').find('img');
